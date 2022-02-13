@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Index from "./components/index_wrapper/Index";
+import HelloWorld from "./components/hello_world/HelloWorld";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Index/>
+      <BrowserRouter>
+
+          <Routes>
+              <Route path="/" element={<Index />}></Route>
+              <Route path="/hello" element={<HelloWorld />}></Route>
+          </Routes>
+
+      </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

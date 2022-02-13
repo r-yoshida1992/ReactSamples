@@ -2,14 +2,7 @@ html, body, #root, .App {
   height: 100%;
 }
 
-.App{
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
-
-.container {
-  width: 100%;
-  text-align: center;
-  font-size: 9vw;
+a {
+  text-decoration: none;
+  display: block;
 }
