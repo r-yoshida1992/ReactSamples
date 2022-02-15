@@ -1,27 +1,25 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import BackButton from "../common/BackButton";
 
 function HelloWorld() {
+    // スタイルの宣言
     const containerStyle = {
-        display: 'flex',
-        alignItems: 'center',
-        width: '100%'
+        display: 'flex' as string,
+        alignItems: 'center' as string,
+        width: '100%' as string,
     }
     const pStyle = {
-        width: '100%',
+        width: '100%' as string,
         textAlign: 'center' as const,
-        fontSize: '9vw'
+        fontSize: '9vw' as string,
     }
     return (
         <div className="App">
-            <div className="container" style={containerStyle}>
+            <div style={containerStyle}>
                 <p style={pStyle}>Hello World</p>
             </div>
-            <Link to="/">
-                <button className="mdc-button mdc-button--raised">
-                    <span className="mdc-button__label">戻る</span>
-                </button>
-            </Link>
+            <BackButton />
         </div>
     );
 }

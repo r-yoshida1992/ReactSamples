@@ -4,28 +4,22 @@ import {Link} from "react-router-dom";
 
 function Index() {
     const appStyle = {
-        display: 'flex',
+        display : 'flex' as string,
         flexWrap: 'wrap' as const,
-        height: 'auto'
+        height: 'auto' as string,
     }
     return (
         <div className="App" style={appStyle}>
             {createCard('/hello','hello world')}
+            {createCard('/post_sample','post sample')}
         </div>
     );
 }
 
 function createCard(path: string, title: string) {
-    const cardStyle = {
-        width: '200px',
-        height: '100px',
-        textAlign: 'center' as const,
-        overflowWrap: 'break-word' as const,
-        margin: '4px'
-    }
     return (
-        <div className="mdc-card" style={cardStyle}>
-            <Link to={path} style={cardStyle}>
+        <div className='mdc-card index-card'>
+            <Link to={path}>
                 {title}
             </Link>
         </div>

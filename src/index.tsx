@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import Index from "./components/index_wrapper/Index";
 import HelloWorld from "./components/hello_world/HelloWorld";
+import PostSample from "./components/post_sample/PostSample";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.render(
           <Routes>
               <Route path="/" element={<Index />}></Route>
               <Route path="/hello" element={<HelloWorld />}></Route>
+              <Route path="/post_sample" element={<PostSample />}></Route>
           </Routes>
 
       </BrowserRouter>
