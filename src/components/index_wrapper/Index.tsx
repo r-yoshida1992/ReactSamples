@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import {Link} from "react-router-dom";
 
-function Index() {
+export default function Index() {
     const appStyle = {
         display : 'flex' as string,
         flexWrap: 'wrap' as const,
@@ -25,5 +25,3 @@ function createCard(path: string, title: string) {
         </div>
     );
 }
-
-export default Index;

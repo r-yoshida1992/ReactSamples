@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-function BackButton() {
+export default function BackButton() {
     return (
         <Link to="/">
             <button className="mdc-button mdc-button--raised">
@@ -10,5 +10,3 @@ function BackButton() {
         </Link>
     );
 }
-
-export default BackButton;

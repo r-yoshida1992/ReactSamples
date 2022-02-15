@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import BackButton from "../common/BackButton";
 
-function HelloWorld() {
+export default function HelloWorld() {
     // スタイルの宣言
     const containerStyle = {
         display: 'flex' as string,
@@ -23,5 +23,3 @@ function HelloWorld() {
         </div>
     );
 }
-
-export default HelloWorld;

@@ -17,14 +17,16 @@ function AlertMessage(props: { data: any; }) {
 }
 
 function TableRow(title: string, data: string) {
-    return <tr>
-        <th>
-            {title}
-        </th>
-        <td>
-            {data}
-        </td>
-    </tr>
+    return (
+        <tr>
+            <th>
+                {title}
+            </th>
+            <td>
+                {data}
+            </td>
+        </tr>
+    )
 }
 
 export default function PostSample() {
@@ -63,21 +65,23 @@ export default function PostSample() {
         event.preventDefault()
     }
 
-    return (<Fragment>
-        <div className="container">
-            <form onSubmit={doSubmit}>
-                <div className="form-group">
-                    <label>Name:</label>
-                    <input type="text" className="form-control" onChange={doChangeName}/>
-                </div>
-                <div className="form-group">
-                    <label>EMail:</label>
-                    <input type="text" className="form-control" onChange={doChangeEmail}/>
-                </div>
-                <input type="submit" className="btn btn-primary mt-5" value="Click"/>
-            </form>
-            <AlertMessage data={form}/>
-        </div>
-        <BackButton/>
-    </Fragment>)
+    return (
+        <Fragment>
+            <div className="container">
+                <form onSubmit={doSubmit}>
+                    <div className="form-group">
+                        <label>Name:</label>
+                        <input type="text" className="form-control" onChange={doChangeName}/>
+                    </div>
+                    <div className="form-group">
+                        <label>EMail:</label>
+                        <input type="text" className="form-control" onChange={doChangeEmail}/>
+                    </div>
+                    <input type="submit" className="btn btn-primary mt-5" value="Click"/>
+                </form>
+                <AlertMessage data={form}/>
+            </div>
+            <BackButton/>
+        </Fragment>
+    )
 }
