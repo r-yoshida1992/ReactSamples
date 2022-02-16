@@ -48,9 +48,6 @@ func main() {
 			return
 		}
 
-		// 非同期処理がわかりやすいように1秒待つ
-		time.Sleep(1 * time.Second)
-
 		// jsonを返却
 		c.JSON(200, JsonReq{
 			Name:  json.Name,
