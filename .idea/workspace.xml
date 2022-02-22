@@ -5,24 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d980059f-755f-4a41-8c03-bacb35f5a4ea" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend_src/.idea/backend_src.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend_src/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend_src/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend_src/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ReactSamples.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ReactSamples.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend_src/post_sample/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend_src/post_sample/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend_src/controller/calc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend_src/controller/post_sample.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend_src/controller/search_address.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend_src/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend_src/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend_src/server/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calc_sample/CalcSample.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/calc_sample/calc_sample.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/back-button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/micro_modal_sample/MicroModalSample.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/micro_modal_sample/micro_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/post_sample_axios/PostSampleAxios.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/search_address/SearchAddress.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/twitter_clone/TwitterClone.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/twitter_clone/twitter_clone.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend_src/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_src/post_sample/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend_src/post_sample/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/backend_src/core/cors_setting.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index_wrapper/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index_wrapper/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/BackButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/BackButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index_wrapper/Index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index_wrapper/Index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/post_sample/PostSample.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/post_sample_fetch/PostSampleFetch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file://$PROJECT_DIR$/../../../../Program Files/Go" />
   <component name="Git.Settings">
@@ -47,13 +70,19 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="go.watchers.conflict.with.on.save.actions.check.performed" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Ruby31-x64/bin/sass.bat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="go" />
     <property name="ts.external.directory.path" value="C:\Users\Administrator\WebstormProjects\ReactSamples\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\WebstormProjects\ReactSamples\src\components" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -93,7 +122,8 @@
       <workItem from="1645016832032" duration="19000" />
       <workItem from="1645016887099" duration="48000" />
       <workItem from="1645018126661" duration="28000" />
-      <workItem from="1645018168301" duration="209000" />
+      <workItem from="1645018168301" duration="12972000" />
+      <workItem from="1645346982660" duration="15092000" />
     </task>
     <servers />
   </component>

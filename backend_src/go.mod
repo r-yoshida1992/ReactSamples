@@ -1,4 +1,4 @@
-module post_sample
+module backend_src
 
 go 1.17
 

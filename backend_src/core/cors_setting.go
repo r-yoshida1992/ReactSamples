@@ -1,18 +1,13 @@
-package main
+package core
 
 import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"net/http"
 	"time"
 )
 
-func main() {
-	// GinのEngineインスタンスを取得
-	router := gin.Default()
-
-	// ここからCorsの設定
-	router.Use(cors.New(cors.Config{
+func CorsSetting() gin.HandlerFunc {
+	return cors.New(cors.Config{
 		// アクセスを許可したいアクセス元
 		AllowOrigins: []string{
 			"http://localhost:3000",
@@ -36,30 +31,5 @@ func main() {
 		AllowCredentials: true,
 		// preflightリクエストの結果をキャッシュする時間
 		MaxAge: 24 * time.Hour,
-	}))
-
-	// Postのハンドラを登録
-	router.POST("/hello", func(c *gin.Context) {
-
-		// jsonリクエストのマッピング
-		var json JsonReq
-		if err := c.ShouldBindJSON(&json); err != nil {
-			c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
-			return
-		}
-
-		// jsonを返却
-		c.JSON(200, JsonReq{
-			Name:  json.Name,
-			Email: json.Email,
-		})
 	})
-
-	// サービス開始
-	router.Run(":8080")
-}
-
-type JsonReq struct {
-	Name  string `json:"name"`
-	Email string `json:"email"`
 }

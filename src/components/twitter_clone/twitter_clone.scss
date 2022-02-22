@@ -1,0 +1,63 @@
+.twitter-clone-container {
+  background-color: #000000;
+  height: 100%;
+  display: flex;
+  color: #ffffff;
+  font-family: "Segoe UI", Meiryo, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+.twitter-clone-left {
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px rgb(47, 51, 54);;
+  }
+
+  .twitter-clone-center {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    min-width: 600px;
+  }
+
+  .twitter-clone-right {
+    width: 100%;
+    height: 100%;
+    border-left: solid 1px rgb(47, 51, 54);
+  }
+
+  .twitter-clone-head {
+    min-height: 100px;
+    height: auto;
+    padding: 0 16px;
+    border-bottom: solid 1px rgb(47, 51, 54);
+
+    .title {
+      font-weight: bold;
+    }
+
+    .head-content{
+      display: flex;
+      .head-logo{
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+        background-color: #61dafb;
+      }
+      .head-text{
+        width: 90%;
+        color: #ffffff;
+        cursor: text;
+        user-select: text;
+        outline: none;
+        padding: 12px 0;
+      }
+    }
+  }
+
+  .twitter-clone-content {
+    height: 100px;
+    padding: 0 16px;
+    border-bottom: solid 1px rgb(47, 51, 54);
+  }
+
+}
+

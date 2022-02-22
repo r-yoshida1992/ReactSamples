@@ -1,5 +1,6 @@
 import React, {useState, Fragment} from 'react';
 import BackButton from "../common/BackButton";
+import axios from "axios";
 
 function AlertMessage(props: { data: any; }) {
     const data = props.data
@@ -16,6 +17,7 @@ function AlertMessage(props: { data: any; }) {
     </div>
 }
 
+// テーブル行を定義
 function TableRow(title: string, data: string) {
     return (
         <tr>
@@ -29,7 +31,8 @@ function TableRow(title: string, data: string) {
     )
 }
 
-export default function PostSample() {
+export default function PostSampleAxios() {
+    // const [state, stateを更新する関数] = useState(初期値);
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [form, setForm] = useState({
@@ -37,31 +40,32 @@ export default function PostSample() {
         email: 'no mail',
     })
 
+    // nameの変更用関数
     const doChangeName = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         setName(event.target.value)
     }
 
+    // emailの変更用関数
     const doChangeEmail = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         setEmail(event.target.value)
     }
 
+    // Clickボタン押下時の関数
     const doSubmit = (event: { preventDefault: () => void; }) => {
-        const URL = 'http://localhost:8080/hello'
-        let req = {
+        // backend_src/post_sampleのmain.goを起動する必要がある
+        const URL = 'http://localhost:8080/post_sample'
+
+        // Post送信のリクエスト
+        const req = {
             name: name,
             email: email,
         }
 
-        fetch(URL, {
-            method: 'POST',
-            mode: 'cors',
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(req)
+        // Post送信
+        axios.post(URL, req).then(json => {
+            setForm({name: json.data.name, email: json.data.email})
         })
-            .then(res => res.json())
-            .then(json => {
-                setForm({name: json['name'], email: json['email']})
-            });
+
         event.preventDefault()
     }
 
